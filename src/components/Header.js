@@ -40,6 +40,7 @@ function Header() {
                             <li>For Candidates</li>
                             <li>Contact Us</li>
                             <li>Log in <FontAwesomeIcon icon={faArrowRight}/> </li>
+                            <hr />
                             <li>Request demo</li>
                         </ul>
                         <div className='nav__menu__line'></div>
