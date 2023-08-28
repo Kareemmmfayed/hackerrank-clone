@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Code Pro', monospace;
+}
+
+:root {
+    --main: #32c766;
+    --main-btn: #068932;
+}
+
+@media (min-width: 1500px) {
+    .container {
+        padding-right: 200px;
+        padding-left: 200px;
+    }
+}
