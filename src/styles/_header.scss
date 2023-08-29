@@ -29,6 +29,10 @@ header {
         padding: 30px 90px;
         position: relative;
 
+        @media (max-width: 600px) {
+        padding: 30px 10px;  
+        }
+
         img {
             width: 200px;
             transition: all 0.3s;

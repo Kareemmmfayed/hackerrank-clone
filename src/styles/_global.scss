@@ -12,6 +12,7 @@ body {
 :root {
     --main: #32c766;
     --main-btn: #068932;
+    --main-dark: #111621;
 }
 
 @media (min-width: 1500px) {
@@ -19,4 +20,8 @@ body {
         padding-right: 200px;
         padding-left: 200px;
     }
+}
+
+.App {
+    min-width: 470px;
 }

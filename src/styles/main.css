@@ -12,6 +12,7 @@ body {
 :root {
   --main: #32c766;
   --main-btn: #068932;
+  --main-dark: #111621;
 }
 
 @media (min-width: 1500px) {
@@ -20,6 +21,10 @@ body {
     padding-left: 200px;
   }
 }
+.App {
+  min-width: 470px;
+}
+
 header .header__top {
   height: 40px;
   background: #050C1B linear-gradient(90deg, #050C1B, #1A4055 15%, #1A4055 35%, #050C1B 50%);
@@ -45,6 +50,11 @@ header nav {
   width: 100%;
   padding: 30px 90px;
   position: relative;
+}
+@media (max-width: 600px) {
+  header nav {
+    padding: 30px 10px;
+  }
 }
 header nav img {
   width: 200px;
@@ -165,33 +175,69 @@ header nav .nav__menu .nav__menu__line {
   }
 }
 .home {
-  height: 633px;
+  overflow: hidden;
+  height: 650px;
   position: relative;
   text-align: center;
+}
+@media (max-width: 1088px) {
+  .home {
+    height: 500px;
+  }
+}
+@media (max-width: 570px) {
+  .home {
+    height: 672px;
+  }
 }
 .home h1 {
   font-size: 80px;
   font-weight: 1000;
   letter-spacing: 0px;
 }
+@media (max-width: 1088px) {
+  .home h1 {
+    font-size: 36px;
+    margin-top: 87px;
+  }
+  .home h1 br {
+    display: none;
+  }
+}
+@media (max-width: 510px) {
+  .home h1 {
+    margin-top: 20px;
+  }
+}
 .home p {
-  font-size: 18px;
-  padding: 0 25%;
-  font-weight: 300;
+  font-size: 20px;
+  padding: 0 26%;
+  font-weight: 100;
   text-align: center;
   letter-spacing: 0px;
+}
+@media (max-width: 1088px) {
+  .home p {
+    padding: 0 12%;
+  }
 }
 .home .home__btns {
   margin: 45px;
 }
 .home .home__btns button {
   border: none;
-  padding: 15px 35px;
+  padding: 20px 45px;
   margin: 0 15px;
   border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s;
+}
+@media (max-width: 510px) {
+  .home .home__btns button {
+    width: 100%;
+    margin-bottom: 15px;
+  }
 }
 .home .home__btns button:first-of-type {
   color: white;
@@ -210,11 +256,8 @@ header nav .nav__menu .nav__menu__line {
   list-style: none;
   display: flex;
   justify-content: center;
-}
-.home ul li {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .home ul li img {
   width: 100px;
@@ -250,4 +293,58 @@ header nav .nav__menu .nav__menu__line {
   top: 100%;
   transform: translate(80%, -80%);
   opacity: 0.2;
+}
+
+.slides {
+  height: 1000px;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+.slides h2 {
+  text-align: center;
+  margin: 75px 0 0;
+  font-size: 50px;
+  font-weight: 100;
+}
+@media (max-width: 500px) {
+  .slides h2 {
+    font-size: 34px;
+  }
+}
+.slides h2:last-of-type {
+  margin: 0;
+  color: var(--main-btn);
+}
+.slides p {
+  text-align: center;
+  padding: 0 26%;
+  font-size: 18px;
+}
+@media (max-width: 1080px) {
+  .slides p {
+    padding: 0 15%;
+    font-size: 24px;
+  }
+}
+@media (max-width: 500px) {
+  .slides p {
+    font-size: 24px;
+  }
+}
+.slides nav {
+  display: flex;
+  justify-content: center;
+}
+.slides nav a {
+  color: #111621;
+  text-decoration: none;
+  padding: 20px 85px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.slides nav a:visited {
+  color: #111621;
+}
+.slides nav a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=main.css.map */

@@ -1,20 +1,46 @@
 .home {
-    height: 633px;
+    overflow: hidden;
+    height: 650px;
     position: relative;
     text-align: center;
+
+    @media (max-width: 1088px) {
+        height: 500px;
+    }
+
+    @media (max-width: 570px) {
+        height: 672px;
+    }
 
     h1 {
         font-size: 80px;
         font-weight: 1000;
         letter-spacing: 0px;
+
+        @media (max-width: 1088px) {
+            br {
+                display: none;
+            }
+
+            font-size: 36px;
+            margin-top: 87px;
+        }
+
+        @media (max-width: 510px) {
+            margin-top: 20px;
+        }
     }
 
     p {
-        font-size: 18px;
-        padding: 0 25%;
-        font-weight: 300;
+        font-size: 20px;
+        padding: 0 26%;
+        font-weight: 100;
         text-align: center;
         letter-spacing: 0px;
+
+        @media (max-width: 1088px) {
+            padding: 0 12%;
+        }
     }
 
     .home__btns {
@@ -22,12 +48,17 @@
 
         button {
             border: none;
-            padding: 15px 35px;
+            padding: 20px 45px;
             margin: 0 15px;
             border-radius: 4px;
             font-size: 16px;
             cursor: pointer;
             transition: all 0.3s;
+
+            @media (max-width: 510px) {
+                width: 100%;
+                margin-bottom: 15px;
+            }
         }
 
         button:first-of-type {
@@ -52,11 +83,10 @@
         list-style: none;
         display: flex;
         justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
 
         li {
-            display: flex;
-            justify-content: center;
-            align-items: center;
 
             img {
                 width: 100px;

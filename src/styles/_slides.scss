@@ -1,0 +1,57 @@
+.slides {
+    height: 1000px;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+
+    h2 {
+        text-align: center;
+        margin: 75px 0 0;
+        font-size: 50px;
+        font-weight: 100;
+
+        @media (max-width: 500px) {
+            font-size: 34px;
+        }
+    }
+
+    h2:last-of-type {
+        margin: 0;
+        color: var(--main-btn);
+    }
+
+    p {
+        text-align: center;
+        padding: 0 26%;
+        font-size: 18px;
+
+        @media (max-width: 1080px) {
+            padding: 0 15%;
+            font-size: 24px;
+        }
+
+        @media (max-width: 500px) {
+            font-size: 24px;
+        }
+    }
+
+    nav {
+        display:flex;
+        justify-content: center;
+
+        a {
+            color: #111621;
+            text-decoration: none;
+            padding: 20px 85px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        a:visited {
+            color: #111621;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
