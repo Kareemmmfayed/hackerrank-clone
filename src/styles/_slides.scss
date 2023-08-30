@@ -3,7 +3,7 @@
     width: 100%;
     font-family: 'Open Sans', sans-serif;
 
-    h2 {
+    > h2 {
         text-align: center;
         margin: 75px 0 0;
         font-size: 50px;
@@ -14,12 +14,12 @@
         }
     }
 
-    h2:last-of-type {
+    > h2:last-of-type {
         margin: 0;
         color: var(--main-btn);
     }
 
-    p {
+    > p {
         text-align: center;
         padding: 0 26%;
         font-size: 18px;

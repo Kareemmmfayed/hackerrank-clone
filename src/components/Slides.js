@@ -1,4 +1,5 @@
 import React from 'react'
+import Skills from './Skills'
 
 function Slides() {
     return (
@@ -12,7 +13,7 @@ function Slides() {
                 <a href='#screen'>Screen</a>
                 <a href='#interview'>Interview</a>
             </nav>
-            
+            <Skills />
         </div>
     )
 }

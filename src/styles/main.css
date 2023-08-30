@@ -25,6 +25,14 @@ body {
   min-width: 470px;
 }
 
+header {
+  height: 130px;
+  position: sticky;
+  background: white;
+  z-index: 1000;
+  top: 0;
+  box-shadow: 0 3px 10px 0 rgba(115, 143, 147, 0.3);
+}
 header .header__top {
   height: 40px;
   background: #050C1B linear-gradient(90deg, #050C1B, #1A4055 15%, #1A4055 35%, #050C1B 50%);
@@ -48,7 +56,7 @@ header nav {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 30px 90px;
+  padding: 20px 90px;
   position: relative;
 }
 @media (max-width: 600px) {
@@ -156,7 +164,7 @@ header nav .nav__menu .nav__menu__line {
 
 @media (min-width: 1060px) and (max-width: 1385px) {
   header nav {
-    padding: 30px 0;
+    padding: 20px 12px;
   }
 }
 @media (min-width: 1088px) and (max-width: 1145px) {
@@ -300,34 +308,34 @@ header nav .nav__menu .nav__menu__line {
   width: 100%;
   font-family: "Open Sans", sans-serif;
 }
-.slides h2 {
+.slides > h2 {
   text-align: center;
   margin: 75px 0 0;
   font-size: 50px;
   font-weight: 100;
 }
 @media (max-width: 500px) {
-  .slides h2 {
+  .slides > h2 {
     font-size: 34px;
   }
 }
-.slides h2:last-of-type {
+.slides > h2:last-of-type {
   margin: 0;
   color: var(--main-btn);
 }
-.slides p {
+.slides > p {
   text-align: center;
   padding: 0 26%;
   font-size: 18px;
 }
 @media (max-width: 1080px) {
-  .slides p {
+  .slides > p {
     padding: 0 15%;
     font-size: 24px;
   }
 }
 @media (max-width: 500px) {
-  .slides p {
+  .slides > p {
     font-size: 24px;
   }
 }
@@ -347,4 +355,63 @@ header nav .nav__menu .nav__menu__line {
 }
 .slides nav a:hover {
   text-decoration: underline;
+}
+
+.skills {
+  background-color: var(--main-dark);
+  width: 80%;
+  margin: 10px auto;
+  display: flex;
+  border-radius: 10px;
+  padding: 20px 40px;
+}
+@media (max-width: 1024px) {
+  .skills {
+    flex-direction: column;
+  }
+}
+.skills__info {
+  display: block;
+  padding: 50px 80px 0;
+}
+.skills__info__label {
+  color: #B7C9CC;
+  font-weight: 600;
+  font-size: 14px;
+}
+.skills__info > h3 {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+}
+.skills__info > p {
+  color: white;
+  font-size: 22px;
+  line-height: 1.6;
+  padding: 0 60px 0 0;
+}
+.skills__info > button {
+  border-radius: 4px;
+  border: 1px solid white;
+  background: var(--main-dark);
+  color: white;
+  padding: 18px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.skills__info > button > svg {
+  font-size: 12px;
+  transition: all 0.4s;
+}
+.skills__info > button:hover svg {
+  transform: translate(80%, 0);
+}
+.skills > img {
+  width: 570px;
+}
+@media (max-width: 1024px) {
+  .skills > img {
+    margin-top: 10px;
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */

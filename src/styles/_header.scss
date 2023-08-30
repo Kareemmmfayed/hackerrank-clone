@@ -1,4 +1,11 @@
 header {
+    
+    height: 130px;
+    position: sticky;
+    background: white;
+    z-index: 1000;
+    top: 0;
+    box-shadow: 0 3px 10px 0 rgba(115,143,147,0.3);
 
     .header__top {
         height: 40px;
@@ -26,7 +33,7 @@ header {
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        padding: 30px 90px;
+        padding: 20px 90px;
         position: relative;
 
         @media (max-width: 600px) {
@@ -158,7 +165,7 @@ header {
 
 @media (min-width: 1060px) and (max-width: 1385px) {
     header nav {
-        padding: 30px 0;
+        padding: 20px 12px;
     }
 }
 
