@@ -1,5 +1,6 @@
 import React from 'react'
 import Skills from './Skills'
+import Tests from './Tests'
 
 function Slides() {
     return (
@@ -14,6 +15,7 @@ function Slides() {
                 <a href='#interview'>Interview</a>
             </nav>
             <Skills />
+            <Tests />
         </div>
     )
 }

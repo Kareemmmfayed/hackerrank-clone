@@ -4,7 +4,23 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faX, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 function Header() {
+
     const [menu, setMenu] = useState(false)
+
+    const [stick, setStick] = useState(false)
+
+    window.onscroll = function () {
+        let nav = document.querySelector("nav");
+        let top = nav.offsetTop;
+        let page = this.scrollY;
+        
+        if (page > top) {
+            setStick(true)
+        }
+        else {
+            setStick(false)
+        }
+    }
 
     return (
         <header>
@@ -13,7 +29,7 @@ function Header() {
                 <span>|</span>
                 <span>Log in</span>
             </div>
-            <nav className='container'>
+            <nav className={stick ? "container scrolled" : "container"}>
                 <img src={logo} alt='logo' className={menu ? 'open_logo' : ''} />
                 <ul>
                     <li>Products</li>

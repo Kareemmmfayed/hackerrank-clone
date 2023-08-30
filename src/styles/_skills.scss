@@ -5,6 +5,11 @@
     display: flex;
     border-radius: 10px;
     padding: 20px 40px;
+    position: relative;
+
+    @media (max-width: 1400px) {
+        width: 92%;
+    }
 
     
     @media (max-width: 1024px) {
@@ -16,17 +21,61 @@
         display: block;
         padding: 50px 80px 0;
 
+        @media (max-width: 1450px) {
+            padding: 50px 45px 0;
+        }
+
+        @media (max-width: 1024px) {
+            padding: 0;
+        }
+
         &__label {
 
             color: #B7C9CC;
             font-weight: 600;
             font-size: 14px;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 20px;
+                height: 1px;
+                left: -27px;
+                top: 50%;
+                background-color: #B7C9CC;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                background-color: var(--main-dark);
+                border: 2px solid #B7C9CC;
+                left: -50px;
+                z-index: 90;
+            }
         }
 
         > h3 {
             color: white;
             font-size: 28px;
             font-weight: bold;
+
+            @media (min-width: 1450px) {
+                &::before {
+                    content: "";
+                    position: absolute;
+                    height: 2000px;
+                    width: 1px;
+                    top: 0;
+                    left: 80px;
+                    background-color: #B7C9CC;
+                    opacity: .6;
+                }
+            }
         }
 
         > p {
@@ -57,12 +106,13 @@
     }
 
     > img {
-        width: 570px;
-
+        object-fit: contain;
+        width: 40%;
         
         @media (max-width: 1024px) {
             margin-top: 10px;
             width: 100%;
         }
     } 
+
 }

@@ -1,0 +1,27 @@
+.tests {
+    margin: -100px auto;
+    padding: 160px 280px 0;
+    background-color: #f7fcff;
+
+    &__label {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    > h3 {
+        font-size: 55px;
+        font-weight: 100;
+    }
+    > h3:first-of-type {
+        margin: 16px 0 0;
+        color: var(--main-btn);
+    }
+
+    > h3:last-of-type {
+        margin: 0;
+    }
+
+    > figure {
+        background-image: url('../assets/report-2.jpg');
+    }
+}
