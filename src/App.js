@@ -1,7 +1,6 @@
 import Header from './components/Header'
 import Home from './components/Home'
 import Slides from './components/Slides'
-import Interview from './components/Interview';
 
 function App() {
   return (
@@ -9,7 +8,6 @@ function App() {
       <Header />
       <Home />
       <Slides />
-      <Interview />
     </div>
   );
 }

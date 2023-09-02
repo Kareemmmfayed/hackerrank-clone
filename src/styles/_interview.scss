@@ -1,3 +1,63 @@
-// .interview {
+.interview {
+    background: white;
+    margin-top: 60px;
+    height: 800px;
+    position: relative;
+    text-align: center;
+    padding: 200px 100px 0;
+
+    @media (min-width: 1400px) {
+        &::before {
+            content: '';
+            position: absolute;
+            width: 30%;
+            height: 70px;
+            border: 1px solid #B7C9CC;
+            border-width: 0 0 1px 1px;
+            left: 249px;
+            top: 0;
+            border-radius: 0 0 0 30px;
+        }
     
-// }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 30%;
+            height: 105px;
+            border: 1px solid #B7C9CC;
+            border-width: 1px 1px 0 0;
+            right: 50%;
+            top: 70px;
+            border-radius: 0 30px 0 0;
+        }
+    }
+
+    > h2 {
+        font-size: 62px;
+        font-weight: 100;
+
+        span {
+            color: #068932;
+        }
+    }
+
+    > p {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.5;
+        max-width: 680px;
+        margin-left: auto;
+        margin-right: auto;    
+    }
+
+    > button {
+        font-size: 14px;
+        color: #fff;
+        border: 1px solid #068932;
+        background: #068932;
+        padding: 15px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+}

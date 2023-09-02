@@ -1,6 +1,8 @@
 import React from 'react'
 import Skills from './Skills'
 import Tests from './Tests'
+import Interview from './Interview'
+import Question from './Question'
 
 function Slides() {
     return (
@@ -16,6 +18,8 @@ function Slides() {
             </nav>
             <Skills />
             <Tests />
+            <Interview />
+            <Question />
         </div>
     )
 }
