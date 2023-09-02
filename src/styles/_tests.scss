@@ -1,7 +1,11 @@
 .tests {
     margin: -100px auto;
-    padding: 160px 280px 0;
+    padding: 160px 145px 100px 280px;
     background-color: #f7fcff;
+
+    @media (max-width: 1300px) {
+        padding: 160px 28px 0;
+    }
 
     &__label {
         font-size: 14px;
@@ -18,10 +22,48 @@
     }
 
     > h3:last-of-type {
-        margin: 0;
+        margin: 0 0 40px 0;
     }
+    
+    &__svg {
+        display: flex;
+        position: relative;
 
-    > figure {
-        background-image: url('../assets/report-2.jpg');
+        svg {
+            position: absolute;
+            left: -110px;
+            top: 24px;
+        }
+
+        @media (min-width:1300px) {
+            &::before {
+                content: "";
+                position: absolute;
+                width: 27px;
+                height: 2px;
+                left: -27px;
+                top: 26px;
+                background-color: #B7C9CC;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                background-color: #f7fcff;
+                border: 1px solid grey;
+                outline: 4px solid #f7fcff;
+                left: -40px;
+                z-index: 90;
+                top: 17px;
+            }
+        }
+
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
     }
 }
