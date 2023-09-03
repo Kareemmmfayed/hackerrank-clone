@@ -617,7 +617,7 @@ header nav .nav__menu .nav__menu__line {
 .interview {
   background: white;
   margin-top: 60px;
-  height: 800px;
+  height: 680px;
   position: relative;
   text-align: center;
   padding: 200px 100px 0;
@@ -674,8 +674,54 @@ header nav .nav__menu .nav__menu__line {
 
 .question {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.question > ul {
+  display: flex;
+  list-style: none;
+}
+.question > ul li {
+  margin: 0 50px;
+  width: 50px;
+}
+.question > ul li > img {
+  transition: all 0.5s;
+}
+@media (max-width: 1500px) {
+  .question > ul li > img {
+    display: none;
+  }
 }
 .question > img {
   width: 70%;
-  justify-content: center;
+  position: absolute;
+  top: 100px;
+}
+
+.normal {
+  position: relative;
+  top: 0;
+  opacity: 1;
+  scale: 1;
+}
+
+.up {
+  position: absolute;
+  top: -150px;
+  opacity: 0;
+  scale: 1.4;
+}
+
+.down {
+  position: absolute;
+  top: 50px;
+  opacity: 0;
+  scale: 1.4;
+}
+
+.goDown {
+  position: absolute;
+  top: 100px !important;
 }/*# sourceMappingURL=main.css.map */

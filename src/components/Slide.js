@@ -1,23 +1,28 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
+
 function Slide({title, p, btn, image}) {
     
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            entry.target.classList.toggle('slide__show', entry.isIntersecting);
-
+    useEffect(() => {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach( entry => {
+                entry.target.classList.toggle('slide__show', entry.isIntersecting);
+                if (entry.isIntersecting) {
+                    observer.unobserve(entry.target)
+                }
+            })
+        }, {
+            threshold: 0.5,
         })
-    }, {
-        threshold: 0.5,
-    })
-
-    let myImages = document.querySelectorAll(".slide img")
-
-    myImages.forEach(myImage => {
-        observer.observe(myImage)
-    })
+    
+        let myImages = document.querySelectorAll(".slide img")
+    
+        myImages.forEach(myImage => {
+            observer.observe(myImage)
+        })
+    }, []); 
 
     return (
         <div className='slide'>

@@ -1,8 +1,56 @@
 .question {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    > ul {
+        display: flex;
+        list-style: none;
+
+        li {
+            margin: 0 50px;
+            width: 50px;
+
+            > img {
+                transition: all 0.5s;
+
+                @media (max-width: 1500px) {
+                    display: none;
+                }
+            }
+        }
+    }
 
     > img {
         width: 70%;
-        justify-content: center;
+        position: absolute;
+        top: 100px;
     }
+}
+
+.normal {
+    position: relative;
+    top: 0;
+    opacity: 1;
+    scale: 1;
+}
+
+.up {
+    position: absolute;
+    top: -150px ;
+    opacity: 0;
+    scale: 1.4;
+}
+
+.down {
+    position: absolute;
+    top: 50px;
+    opacity: 0;
+    scale: 1.4;
+}
+
+.goDown {
+    position: absolute;
+    top: 100px !important;
 }
