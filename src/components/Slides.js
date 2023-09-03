@@ -3,6 +3,7 @@ import Skills from './Skills'
 import Tests from './Tests'
 import Interview from './Interview'
 import Question from './Question'
+import Help from './Help'
 
 function Slides() {
     return (
@@ -20,6 +21,7 @@ function Slides() {
             <Tests />
             <Interview />
             <Question />
+            <Help />
         </div>
     )
 }

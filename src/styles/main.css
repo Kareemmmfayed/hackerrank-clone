@@ -724,4 +724,18 @@ header nav .nav__menu .nav__menu__line {
 .goDown {
   position: absolute;
   top: 100px !important;
+}
+
+.help {
+  margin-top: 850px;
+}
+.help__bot ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.help__bot ul li img {
+  width: 100px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,24 @@
+.help {
+    margin-top: 850px;
+
+    &__top {
+        
+    }
+
+    &__bot {
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+    
+            li {
+    
+                img {
+                    width: 100px;
+                }
+            }
+        }
+    }
+}
