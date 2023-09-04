@@ -4,6 +4,8 @@ import Tests from './Tests'
 import Interview from './Interview'
 import Question from './Question'
 import Help from './Help'
+import Challenge from './Challenge'
+import Footer from './Footer'
 
 function Slides() {
     return (
@@ -22,6 +24,8 @@ function Slides() {
             <Interview />
             <Question />
             <Help />
+            <Challenge />
+            <Footer />
         </div>
     )
 }
