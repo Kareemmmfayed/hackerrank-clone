@@ -4,6 +4,10 @@
     align-items: center;
     position: relative;
 
+    @media (max-width: 600px) {
+        display: none;
+    }
+
     > ul {
         display: flex;
         list-style: none;

@@ -7,6 +7,7 @@
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 :root {
@@ -124,7 +125,7 @@ header nav .nav__menu {
   display: block;
   position: absolute;
   width: 100%;
-  height: 690px;
+  height: 900px;
   left: 0;
   top: 100%;
   background-color: white;
@@ -320,6 +321,11 @@ header nav .nav__menu .nav__menu__line {
   font-size: 50px;
   font-weight: 100;
 }
+@media (max-width: 650px) {
+  .slides > h2 {
+    font-size: 40px;
+  }
+}
 @media (max-width: 500px) {
   .slides > h2 {
     font-size: 34px;
@@ -355,6 +361,11 @@ header nav .nav__menu .nav__menu__line {
   padding: 20px 85px;
   font-weight: bold;
   font-size: 18px;
+}
+@media (max-width: 550px) {
+  .slides nav a {
+    padding: 20px 40px;
+  }
 }
 .slides nav a:visited {
   color: #111621;
@@ -609,6 +620,11 @@ header nav .nav__menu .nav__menu__line {
   transform: translateX(120px);
   transition: all 0.3s;
 }
+@media (max-width: 992px) {
+  .slide img {
+    width: 82%;
+  }
+}
 .slide__show {
   opacity: 1 !important;
   transform: translateX(0) !important;
@@ -621,6 +637,11 @@ header nav .nav__menu .nav__menu__line {
   position: relative;
   text-align: center;
   padding: 200px 100px 0;
+}
+@media (max-width: 550px) {
+  .interview {
+    padding: 150px 40px 0;
+  }
 }
 @media (min-width: 1400px) {
   .interview::before {
@@ -650,6 +671,11 @@ header nav .nav__menu .nav__menu__line {
   font-size: 62px;
   font-weight: 100;
 }
+@media (max-width: 550px) {
+  .interview > h2 {
+    font-size: 42px;
+  }
+}
 .interview > h2 span {
   color: #068932;
 }
@@ -677,6 +703,11 @@ header nav .nav__menu .nav__menu__line {
   flex-direction: column;
   align-items: center;
   position: relative;
+}
+@media (max-width: 600px) {
+  .question {
+    display: none;
+  }
 }
 .question > ul {
   display: flex;
@@ -730,8 +761,29 @@ header nav .nav__menu .nav__menu__line {
   margin-top: 850px;
   padding: 0 200px;
 }
+@media (max-width: 992px) {
+  .help {
+    margin-top: 500px;
+  }
+}
+@media (max-width: 1430px) {
+  .help {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 600px) {
+  .help {
+    margin-top: 0;
+  }
+}
 .help__top {
   display: flex;
+}
+@media (max-width: 992px) {
+  .help__top {
+    flex-direction: column;
+    padding: 32px;
+  }
 }
 .help__top__text {
   flex: 50%;
@@ -809,6 +861,11 @@ header nav .nav__menu .nav__menu__line {
   width: 100%;
   margin: 40px 0;
 }
+@media (max-width: 992px) {
+  .challenge {
+    flex-direction: column;
+  }
+}
 .challenge__right {
   background-color: #f7fcff;
 }
@@ -842,6 +899,11 @@ header nav .nav__menu .nav__menu__line {
   display: grid;
   grid-template-columns: repeat(auto-fill, 300px);
   padding: 0 94px;
+}
+@media (max-width: 800px) {
+  .footer {
+    grid-template-columns: repeat(auto-fill, 200px);
+  }
 }
 .footer div ul {
   list-style: none;

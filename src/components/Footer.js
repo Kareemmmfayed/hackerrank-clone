@@ -1,5 +1,4 @@
 import React from 'react'
-import kr from '../assets/favicon.png'
 
 function Footer() {
     return (
