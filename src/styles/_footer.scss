@@ -1,0 +1,23 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    padding: 0 94px;
+    
+    div {
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                cursor: pointer;
+                padding: 5px 0;
+                margin: 0;
+            }
+
+            li:hover {
+                color: var(--main-btn);
+            }
+        }
+    }
+}

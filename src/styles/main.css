@@ -836,4 +836,22 @@ header nav .nav__menu .nav__menu__line {
   padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  padding: 0 94px;
+}
+.footer div ul {
+  list-style: none;
+  padding: 0;
+}
+.footer div ul li {
+  cursor: pointer;
+  padding: 5px 0;
+  margin: 0;
+}
+.footer div ul li:hover {
+  color: var(--main-btn);
 }/*# sourceMappingURL=main.css.map */
