@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/hackerrank-clone/static/css/main.75cfa4fc.css",
-    "main.js": "/hackerrank-clone/static/js/main.daea9069.js",
+    "main.js": "/hackerrank-clone/static/js/main.165ade1e.js",
     "static/media/resume.jpg": "/hackerrank-clone/static/media/resume.faa38a51bddeb874aad5.jpg",
     "static/media/question.png": "/hackerrank-clone/static/media/question.439d42e5ac9caf0b56a7.png",
     "static/media/community.jpg": "/hackerrank-clone/static/media/community.3e3003c1efa661ac421c.jpg",
@@ -10,10 +10,10 @@
     "static/media/binarytree-1.png": "/hackerrank-clone/static/media/binarytree-1.182f9e8c91d12657f4e1.png",
     "index.html": "/hackerrank-clone/index.html",
     "main.75cfa4fc.css.map": "/hackerrank-clone/static/css/main.75cfa4fc.css.map",
-    "main.daea9069.js.map": "/hackerrank-clone/static/js/main.daea9069.js.map"
+    "main.165ade1e.js.map": "/hackerrank-clone/static/js/main.165ade1e.js.map"
   },
   "entrypoints": [
     "static/css/main.75cfa4fc.css",
-    "static/js/main.daea9069.js"
+    "static/js/main.165ade1e.js"
   ]
 }
